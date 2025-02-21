@@ -3,7 +3,7 @@ import { buttonVariants } from "./ui/button";
 
 export default function Footer() {
   return (
-    <footer className='flex justify-center items-center p-4 gap-5 h-16'>
+    <footer className='flex flex-col md:flex-row justify-center items-center p-4 gap-5 h-16'>
       <a
         href='https://www.harshitpatel.dev/'
         target='_blank'
