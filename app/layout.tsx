@@ -28,7 +28,9 @@ export default async function RootLayout({
   const user = await currentUser();
 
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    >
       <html lang='en' suppressHydrationWarning>
         <body className={`${inter.className} antialiased`}>
           <header className='flex justify-between items-center p-4 gap-5 h-16 mx-10'>
