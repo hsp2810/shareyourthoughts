@@ -3,6 +3,8 @@ import { CommentWithUser } from "@/types";
 import { User } from "@prisma/client";
 import CommentContentContainer from "./CommentContentContainer";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Avatar, AvatarFallback } from "./ui/avatar";
+import AvatarProvider from "./AvatarProvider";
 
 interface CommentProps {
   comment: CommentWithUser;
@@ -23,7 +25,8 @@ export default async function Comment({ comment, loggedInUser }: CommentProps) {
     <Card>
       <CardHeader className='flex flex-row justify-between'>
         <div className='flex flex-col gap-2'>
-          <CardTitle className='text-xl md:text-2xl'>
+          <CardTitle className='flex items-center gap-2 text-xl md:text-2xl'>
+            <AvatarProvider name={comment.user.name.split(" ")} />
             {comment.user.name} {loggedInUser.id === comment.user.id && "(You)"}
           </CardTitle>
           <CardDescription>
