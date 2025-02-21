@@ -11,6 +11,14 @@ export default function Footer() {
       >
         Made by Harshit Patel with ❤️
       </a>
+
+      <a
+        href='https://github.com/hsp2810/shareyourthoughts'
+        target='_blank'
+        className={cn(buttonVariants())}
+      >
+        View Source Code
+      </a>
     </footer>
   );
 }
