@@ -23,7 +23,7 @@ export default async function Comment({ comment, loggedInUser }: CommentProps) {
     <Card>
       <CardHeader className='flex flex-row justify-between'>
         <div className='flex flex-col gap-2'>
-          <CardTitle>
+          <CardTitle className='text-xl md:text-2xl'>
             {comment.user.name} {loggedInUser.id === comment.user.id && "(You)"}
           </CardTitle>
           <CardDescription>

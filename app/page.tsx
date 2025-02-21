@@ -36,7 +36,7 @@ export default async function Home() {
   return (
     <main className='w-3/4 mx-auto min-h-screen space-y-4 py-10'>
       <div className='flex justify-between items-center'>
-        <h1 className='text-4xl font-bold'>Feed</h1>
+        <h1 className='text-3xl md:text-4xl font-bold'>Feed</h1>
         <Link href='/comments/new' className={cn(buttonVariants())}>
           Add your thought
         </Link>

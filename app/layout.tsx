@@ -33,7 +33,7 @@ export default async function RootLayout({
     >
       <html lang='en' suppressHydrationWarning>
         <body className={`${inter.className} antialiased`}>
-          <header className='flex justify-between items-center p-4 gap-5 h-16 mx-10'>
+          <header className='flex justify-between items-center p-4 gap-5 h-16 my-5 md:my-0 mx-10'>
             <SignedOut>
               <SignInButton />
               <SignUpButton />

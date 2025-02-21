@@ -46,7 +46,7 @@ export default function CommentNewForm() {
   }
 
   return (
-    <section className='flex flex-col gap-4'>
+    <section className='flex flex-col gap-5'>
       <Input
         value={comment}
         onChange={(e) => setComment(e.target.value)}

@@ -77,7 +77,7 @@ export default function CommentFooterButtons({
       )}
 
       {loggedInUser.id === comment.user.id && (
-        <div className='flex gap-2'>
+        <div className='flex flex-col md:flex-row gap-2'>
           {isEditing ? (
             <Button
               variant='outline'
